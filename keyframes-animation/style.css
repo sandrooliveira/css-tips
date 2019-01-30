@@ -1,0 +1,30 @@
+.container {
+  border: 1px solid red;
+  height: 95vh;
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:blue;
+}
+
+.name {
+  animation: movingInLeft;
+  animation-duration: 5s;
+  background-color: red;
+  height: 100px;
+}
+
+@keyframes movingInLeft {
+  0% {
+    transform: translateX(-100px)
+  }
+
+  100% {
+    transform: translate(200px);
+  }
+}
